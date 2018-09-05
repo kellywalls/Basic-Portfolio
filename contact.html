@@ -1,78 +1,83 @@
-<!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    </head>
 
-    <!-- apply css reset -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-    <!-- link css for my portfolio -->
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <body>
+        <header id="masthead">
+            <div class="container">
+                <a href="index.html" id="logo">Kelly Walls</a>
+                <nav>
+                    <a href="index.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contacts</a>
+                </nav>
+            </div>
+        </header>
 
-</head>
+        <div id="main-container" class="container">
+            <section class="main-section">
+                <h1>Contact</h1>
 
-<body>
+                <form id="contact-form">
 
-    <!-- Header incorporates my name on left and nav bar on the right -->
-    <header>
+                    <ul>
 
-        <h1>Kelly Walls</h1>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="John Smith">
+                        </li>
 
-        <div class="topnav">
-            <a href="index.html">About |</a>
-            <a href="portfolio.html">Portfolio |</a>
-            <a href="contact.html">Contact</a>
+                        <li>
+
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" placeholder="example@email.com" >
+                        </li>
+
+                        <li>
+
+                            <label for="message" name="message">Message</label>
+                            <textarea name="message" id="message"></textarea>
+
+                        </li>
+
+                    </ul>
+
+                    <input type="submit" name=:"submit">
+
+                </form>
+
+                
+
+ 
+
+            </section>
+
+            <section class="sidebar">
+
+                <div id="connect">
+
+                    <h2>Connect with Me</h2>
+
+                    <img src="assets/images/github.png" class="social" alt="Github">
+
+                    <img src="assets/images/linkedin.png" class="social" alt="LinkedIn">
+
+                    <img src="assets/images/stackoverflow.png" class="social" alt="stackoverflow">
+                </div>
+            </section>
         </div>
-
-    </header>
-
-    <!-- Main content area -->
-    <div class="content">
-
-        
-        <h2>Contact</h2>
-        
-        <!-- <form>
-            Name<br>
-            <input type="text" name="Name"><br>
-
-            Email<br>
-            <input type="text" name="email"><br>
-
-            Message<br>
-            <input type="text" name="message"><br>
-
-            <input type="submit" value="Submit">
-
-
-        </form> -->
-
-        <form>
-            <label for="name">Name</label>
-            <input type="text" name="wholeName">
-
-            <label for="emailAddr">Email</label>
-            <input type="email" name="emailAddress">
-
-            <label for="message">Message</label>
-            <textarea name:"message" id="styledMessage" name="message"></textarea>
-
-            <input type="submit" value="Submit">
-
-
-        </form>
-
-
-        
-    </div>
-    
-    <div class="footer">
-        <p> Copyright &copy; </p>
-    </div>
-
-</body>
+        <footer>
+            <div class="container">
+                Copright &copy;
+            </div>
+        </footer>
+    </body>
 
 </html>
